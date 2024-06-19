@@ -4,7 +4,13 @@ public class HolaMundo {
 
     public static void main(String[] args) {
 
-        System.out.println("Hola Mundo!!!");
+        //Se crea el objeto
+        Mensaje msg = new Mensaje();
+
+        //alt + enter ==> para introducir una variable local
+        String nombre = msg.solicitaDatos("Ingresa tu nombre");
+        msg.saludar(nombre);
+
 
     }
 
