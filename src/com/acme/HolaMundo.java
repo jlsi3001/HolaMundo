@@ -8,10 +8,10 @@ public class HolaMundo {
         Mensaje msg = new Mensaje();
 
         //alt + enter ==> para introducir una variable local
-        String nombre = msg.solicitaDatos("Ingresa tu nombre");
-        msg.saludar(nombre);
-
-
+        String nombre = msg.solicitaDatos("Ingresa tu nombre: ");
+        String apellidos = msg.solicitaDatos("Escribe tu apellido: ");
+        Persona p1 = new Persona(nombre, apellidos);
+        msg.saludar(p1);
     }
 
 }

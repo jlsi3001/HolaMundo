@@ -11,9 +11,9 @@ public class Mensaje {
         return scn.nextLine();
         }
 
-    public void saludar(String nombre) {
+    public void saludar(Persona p) {
 
         //lo que realiza el %s es tomar el valor del nombre
-        System.out.printf("Hola %s, Bienvenido a Java \n", nombre);
+        System.out.printf("Hola %s, Bienvenido a Java \n", p);
     }
 }
